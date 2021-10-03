@@ -1,0 +1,24 @@
+package com.book.JPRGerbertShildt.example.patterns.creational.singleton.singleton2;
+
+public class Singleton {
+
+    private static Singleton instance = null;
+
+    private Singleton() {
+    }
+
+    public static Singleton getInstance() {
+
+        if (instance == null) {
+            instance = new Singleton();
+        }
+
+        return instance;
+    }
+
+    public void setUp() {
+        System.out.println("setUp");
+    }
+
+}
+
